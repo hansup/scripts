@@ -1,10 +1,10 @@
-# detect-db
-A Netklaar script
+# scripts
+A Netklaar collection of handy cli scripts
 
 ## What does it do?
-detect-db provides functionality for detecting the creation of .php files 
+1. detect-db.sh; provides functionality for detecting the creation of .php files 
 
-## Dependency
+## Dependencies
 An installed version of maldetect: https://www.rfxn.com/projects/linux-malware-detect/
 An installed version of ClamAV
 
