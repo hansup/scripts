@@ -22,6 +22,7 @@ Dit bericht is automatisch verstuurd vanaf ${HOSTNAME}
 "
 
   mail -s "Detect BACKDOOR Notificatie van ${HOSTNAME}" info@netklaar.nl <<< ${MESSAGE}
+  logrotate --force /etc/logrotate.d/maldet
 else
   echo "no .php files found in ${LOG_FILE} on ${HOSTNAME}"
 fi
