@@ -21,7 +21,7 @@ ${OUTPUT}
 Dit bericht is automatisch verstuurd vanaf ${HOSTNAME}
 "
 
-  mail -s "Detect BD Notificatie van ${HOSTNAME}" hans@netklaar.nl <<< ${MESSAGE}
+  mail -s "Detect BACKDOOR Notificatie van ${HOSTNAME}" info@netklaar.nl <<< ${MESSAGE}
 else
   echo "no .php files found in ${LOG_FILE} on ${HOSTNAME}"
 fi
