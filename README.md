@@ -19,6 +19,6 @@ An installed version of inotify-tools
 6. copy logrotate script:
    `cp /usr/local/share/netklaar/scripts/logrotate/etc_logrotate.d_maldet /etc/logrotate/maldet`
 7. add cronjob:
-   '* * * * * /usr/local/share/netklaar/scripts/hosting/detect-bd.sh'
+   `* * * * * /usr/local/share/netklaar/scripts/hosting/detect-bd.sh`
 
  
