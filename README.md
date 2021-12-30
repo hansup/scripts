@@ -15,10 +15,10 @@ An installed version of inotify-tools
 3. install inotify-tools
 4. if your on Debian 11 (bulsseye), fix maldet bug before starting maldet
 5. install these scripts in /usr/local/share/netklaar/
-   git clone git@github.com:hansup/scripts.git
+   `git clone git@github.com:hansup/scripts.git`
 6. copy logrotate script:
-   cp /usr/local/share/netklaar/scripts/logrotate/etc_logrotate.d_maldet /etc/logrotate/maldet
+   `cp /usr/local/share/netklaar/scripts/logrotate/etc_logrotate.d_maldet /etc/logrotate/maldet`
 7. add cronjob:
-   "* * * * * /usr/local/share/netklaar/scripts/hosting/detect-bd.sh"
+   '* * * * * /usr/local/share/netklaar/scripts/hosting/detect-bd.sh'
 
  
