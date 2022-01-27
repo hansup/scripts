@@ -19,6 +19,7 @@ Dit bericht is automatisch verstuurd vanaf ${HOSTNAME}
 
   mail -s "Detect BACKDOOR Notificatie van ${HOSTNAME}" info@netklaar.nl <<< ${MESSAGE}
   savelog ${LOG_FILE}
+  echo "'php. CREATE' string found in ${LOG_FILE} on ${HOSTNAME}"
   systemctl restart maldet
 else
   echo "no '.php CREATE' string found in ${LOG_FILE} on ${HOSTNAME}"
