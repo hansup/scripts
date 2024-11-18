@@ -17,8 +17,8 @@ An installed version of inotify-tools
 5. install these scripts in /usr/local/share/netklaar/
    `git clone git@github.com:hansup/scripts.git`
 6. copy logrotate script:
-   `cp /usr/local/share/netklaar/scripts/logrotate/etc_logrotate.d_maldet /etc/logrotate/maldet`
-7. add cronjob:
+   `cp /usr/local/share/netklaar/scripts/logrotate/etc_logrotate.d_maldet /etc/logrotate.d/maldet`
+7. add cronjobs:
    `* * * * * /usr/local/share/netklaar/scripts/hosting/detect-backdoor.sh`
 
 ## installation wordfence cli
@@ -29,4 +29,6 @@ An installed version of inotify-tools
 5. add cronjob:
    `30 4 * * 0 /usr/local/share/netklaar/scripts/hosting/malware-scan.sh`
 
- 
+## installation loadavg.sh
+1. add cronjob:
+   * * * * * /usr/local/share/netklaar/scripts/hosting/loadavg.sh

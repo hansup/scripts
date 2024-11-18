@@ -1,5 +1,5 @@
-/usr/local/maldetect/logs/event_log
-/usr/local/maldetect/logs/clamscan_log {
+/var/log/maldetect/event_log
+/var/log/maldetect/clamscan_log {
     missingok
     weekly
     compress
@@ -8,7 +8,7 @@
     rotate 14
     create 0644 root root
 }
-/usr/local/maldetect/logs/inotify_log {
+/var/log/maldetect/inotify_log {
     missingok
     weekly
     compress
@@ -19,4 +19,13 @@
     postrotate
         /bin/systemctl condrestart maldet.service > /dev/null 2>/dev/null || true
     endscript
+}
+/var/log/loadavg.log {
+    weekly
+    missingok
+    copytruncate
+    rotate 14
+    compress
+    delaycompress
+    notifempty
 }
