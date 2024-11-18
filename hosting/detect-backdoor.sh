@@ -21,6 +21,6 @@ Dit bericht is automatisch verstuurd vanaf ${HOSTNAME}
   savelog ${LOG_FILE}
   echo "'php. CREATE' string found in ${LOG_FILE} on ${HOSTNAME}"
   systemctl restart maldet
-else
-  echo "no '.php CREATE' string found in ${LOG_FILE} on ${HOSTNAME}"
+#else
+#  echo "no '.php CREATE' string found in ${LOG_FILE} on ${HOSTNAME}"
 fi

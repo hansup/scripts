@@ -9,7 +9,7 @@ An installed version of maldetect: https://www.rfxn.com/projects/linux-malware-d
 An installed version of ClamAV
 An installed version of inotify-tools
 
-## installation
+## installation maldet
 1. install and setup maldet
 2. install clamav
 3. install inotify-tools
@@ -19,6 +19,14 @@ An installed version of inotify-tools
 6. copy logrotate script:
    `cp /usr/local/share/netklaar/scripts/logrotate/etc_logrotate.d_maldet /etc/logrotate/maldet`
 7. add cronjob:
-   `* * * * * /usr/local/share/netklaar/scripts/hosting/detect-bd.sh`
+   `* * * * * /usr/local/share/netklaar/scripts/hosting/detect-backdoor.sh`
+
+## installation wordfence cli
+1. wget https://github.com/wordfence/wordfence-cli/releases/latest/download/wordfence.deb
+2. apt install ./wordfence.deb
+3. wordfence -c ~/.config/wordfence/wordfence-cli.ini
+4. apt install libvectorscan5
+5. add cronjob:
+   `30 4 * * 0 /usr/local/share/netklaar/scripts/hosting/malware-scan.sh`
 
  
