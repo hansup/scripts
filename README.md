@@ -31,4 +31,8 @@ An installed version of inotify-tools
 
 ## installation loadavg.sh
 1. add cronjob:
-   * * * * * /usr/local/share/netklaar/scripts/hosting/loadavg.sh
+   `* * * * * /usr/local/share/netklaar/scripts/hosting/loadavg.sh`
+
+## installation rotate-modsecurity-dir.sh
+1. add cronjob:
+   `31 2 * * * /usr/local/share/netklaar/scripts/hosting/rotate-modsecurity-dir.sh`
