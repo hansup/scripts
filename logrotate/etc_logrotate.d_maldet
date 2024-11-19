@@ -20,12 +20,3 @@
         /bin/systemctl condrestart maldet.service > /dev/null 2>/dev/null || true
     endscript
 }
-/var/log/loadavg.log {
-    weekly
-    missingok
-    copytruncate
-    rotate 14
-    compress
-    delaycompress
-    notifempty
-}

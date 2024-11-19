@@ -1,0 +1,21 @@
+/var/log/loadavg.log {
+    weekly
+    missingok
+    copytruncate
+    rotate 14
+    compress
+    delaycompress
+    notifempty
+}
+
+/home/solgarlive/www/typo3temp/logs/*.log
+/home/solgarlive/var/log/*.log {
+    daily
+    su solgarlive solgarlive
+    missingok
+    copytruncate
+    rotate 14
+    compress
+    delaycompress
+    notifempty
+}
