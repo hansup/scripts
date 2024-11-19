@@ -1,0 +1,3 @@
+* * * * * /usr/local/share/netklaar/scripts/hosting/loadavg.sh
+* * * * * /usr/local/share/netklaar/scripts/hosting/detect-backdoor.sh
+25 4 * * 0 /usr/local/share/netklaar/scripts/hosting/malware-scan.sh
